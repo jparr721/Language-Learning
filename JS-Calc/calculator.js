@@ -25,10 +25,16 @@ var divide = function(a, b){
     return a / b;
 };
 
+//Get the info from the form field
 var x = document.getElementById("calculations");
 
+//Split the array so I can find the elements
 var calculationArray = x.split(" ");
 
+/**
+ * In its basic form, this will just take the elements from either side of the operator,
+ * which are hopefully only separated by the symbol in the array. Broken for now though...
+ */
 if(jQuery.inArray(calculationArray, '+')){
     console.log(add(calculationArray[0], calculationArray[3]));
 }
