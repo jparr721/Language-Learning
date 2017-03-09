@@ -3,9 +3,10 @@
  */
 
 var buttons = document.querySelectorAll('#main span');
+var operator = ['+', '-', 'X', '/'];
 
 for(var i = 0; i < buttons.length; i++){
-    button[i].onclick = function(e){
+    buttons[i].onclick = function(e){
 
     }
 }

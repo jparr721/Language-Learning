@@ -15,30 +15,25 @@ html {
 }
 
 #main {
-    width: 400px;
+    width: 355px;
     height: auto;
+    magin: 100px auto;
+    padding: 20px 20px 9px;
     background: linear-gradient(#9dd2ea, #8bceec);
     text-align: center;
     border-radius: 3px;
     box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.screen {
-    width: 200px;
-    height: 30px;
-    padding-top: 20px;
-
-    resize: none;
-}
-
 /** Calculation Screen **/
 .top span.clear-button {
-    float: left;
+    background: #ff9fa8;
+    box-shadow: 0px 4px #ff7c87;
 }
 
 .top .screen {
     height: 40px;
-    width: 200px;
+    width: 212px;
     float: right;
     padding: 0 10px;
     background: rgba(0, 0, 0, 0.2);
@@ -56,11 +51,11 @@ html {
 
 /** Buttons **/
 
-.btn {
+.btn, .top {
     overflow: hidden;
 }
 
-.btn span, top span.clear-button {
+.btn span, .top span.clear-button {
 
     float: left;
     position: relative;
@@ -69,7 +64,7 @@ html {
     cursor: pointer;
 
     width: 66px;
-    height: 40px;
+    height: 36px;
 
     background: white;
     border-radius: 3px;
@@ -85,11 +80,19 @@ html {
     user-select: none;
 }
 
-.top span.clear-button:hover {
-    background: #2eb82e;
-    box-shadow: 0px 4px #85e085;
+.btn span.equals {
+    background: #f7e1b5;
+    box-shadow: 0px 4px #9da853;
+
 }
 
+.btn span.operator{
+    float: right;
+    background: #2eb82e;
+    margin-right: 0;
+}
+
+/** Hover **/
 .btn span:hover {
     background: #985f0d;
     box-shadow: 0px 4px #ffcccc;
@@ -97,13 +100,28 @@ html {
 }
 
 .btn span.equals:hover{
-    background: #985f0d;
+    background: #9d9d9d;
     box-shadow: 0px 4px #6b54d3;
     color: white;
 }
 
-.btn span.operator{
-    float: right;
-    background: #000000;
-    margin-right: 0;
+.top span.clear-button:hover {
+    background: #2eb82e;
+    box-shadow: 0px 4px #85e085;
+}
+
+/** Active **/
+.btn span:active {
+    box-shadow: 0px 0px #985f0d;
+    top: 4px;
+}
+
+.btn span.equals:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+.top span.clear-button:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
 }
