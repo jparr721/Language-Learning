@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator App</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
-    <link rel="stylesheet" href="CSS/jquery-3.1.1.min.js" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/utility.css" />
-    <link rel="stylesheet" href="calculator.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+    <script src="calculator.js"></script>
 </head>
-<body>
-<div id="main">
-    <div class="top">
-        <span class="clear-button">C</span>
-        <div class="screen"></div>
-    </div>
-        <div class="btn">
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span class="operator">+</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span class="operator">-</span>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span class="operator">÷</span>
-            <span>0</span>
-            <span>.</span>
-            <span class="equals">=</span>
-            <span class="operator">x</span>
+    <body>
+    <div id="calculator">
+        <div id="total">
+        </div>
+        <div id="operators">
+            <a>+</a>
+            <a>-</a>
+            <a>/</a>
+            <a>x</a>
+            <a>=</a>
+        </div>
+        <div id="numbers">
+            <a>1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>4</a>
+            <a>5</a>
+            <a>6</a>
+            <a>7</a>
+            <a>8</a>
+            <a>9</a>
+            <a id="clear">C</a>
+            <a>0</a>
+            <a id="clearall">AC</a>
+        </div>
         </div>
 
-    </div>
-</body>
+    </body>
 </html>
+
