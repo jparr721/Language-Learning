@@ -11,13 +11,13 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NotificationFragment extends Fragment {
-    public static NotificationFragment newInstance() {
-        NotificationFragment fragment = new NotificationFragment();
+public class ScannerFragment extends Fragment {
+    public static ScannerFragment newInstance() {
+        ScannerFragment fragment = new ScannerFragment();
         return fragment;
     }
 
-    public NotificationFragment() {
+    public ScannerFragment() {
         // Required empty public constructor
     }
 
