@@ -1,0 +1,8 @@
+CREATE TABLE inventory (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  quantity VARCHAR NOT NULL,
+  units VARCHAR NOT NULL,
+  createdOn DATE NOT NULL DEFAULT CURRENT_DATE,
+  expiresOn DATE
+)

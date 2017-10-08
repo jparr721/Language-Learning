@@ -1,0 +1,1 @@
+#[macro_use] extern create diesel;
