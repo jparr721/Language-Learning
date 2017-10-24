@@ -20,7 +20,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 	def update(self, instance, validated_data):
 		for field in validated_data:
-			if field == 'password'
+			if field == 'password':
 				instance.set_password(validated_data.get(field))
 			else :
 				instance.__setattr__(field, validated_data.get(field))
